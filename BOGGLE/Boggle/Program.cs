@@ -19,8 +19,17 @@ namespace Boggle
             string[] words = word.Split(",");
             
             Console.WriteLine("output : {0}", hasWord(Int32.Parse(words[0]), Int32.Parse(words[1]), words[2]));
+            Console.WriteLine("output : {0}", hasWordUsingLoop(Int32.Parse(words[0]), Int32.Parse(words[1]), words[2]));
         }
 
+        static bool hasWordUsingLoop(int y, int x, string word)
+        {
+            if (x < 0 || x > 4 || y < 0 || y > 4)
+            {
+                return false;
+            }
+            return false;
+        }
         static bool hasWord(int y, int x, string word)
         {
             if (x < 0 || x > 4 || y < 0 || y > 4)
